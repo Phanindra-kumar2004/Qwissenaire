@@ -5,8 +5,7 @@
 
 body{
     background-color: rgb(37, 66, 125);
-    width: 100vw;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     color: white;
     font-family: sans-serif;
 }
@@ -17,15 +16,11 @@ body{
     width: 100vw;
     height: 10vh;
     background-color: rgba(38, 37, 44, 0.914);
-    z-index: 1;
-    box-shadow: 0px 0 30px rgba(38, 37, 44, 0.914) ;
-}
-.desktop{
-    height: 100%;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 1;
+    box-shadow: 0px 0 30px rgba(38, 37, 44, 0.914) ;
 }
 .nav-links{
     min-width: fit-content;
@@ -47,13 +42,10 @@ body{
 background-color: #2facddc7;
 }
 
-.navbar .desktop img{
+.navbar img{
     height: 90%;
 }
 
-.navbar .mobile{
-    display: none;
-}
 .landing{
     background-image: url("./images/online-exam.jpg");
     background-size: cover;
@@ -77,7 +69,7 @@ background-color: #2facddc7;
     justify-content: center;
     flex-direction: column;
     background-color: rgba(38, 37, 44, 0.914);
-    clip-path: polygon(0 20vh, 100% 20vh, 75% 80vh, 0% 80vh);
+    clip-path: polygon(0 20vh, 70vw 20vh, 55vw 80vh, 0% 80vh);
     padding-right: 7%;
     width: 70vw;
     height: 100vh;
@@ -86,7 +78,7 @@ background-color: #2facddc7;
 }
 
 .main-heading{
-    font-size: max(4.05vh, 5.5vw);
+    font-size: min(13.5vw,9vh);
     color: white;
     position: relative;
     text-shadow: 2px 2px 5px black, -2px -2px 5px black;
@@ -96,7 +88,7 @@ background-color: #2facddc7;
     background-color: #2FADDD;
     margin-top: 20px;
     padding: 20px 40px ;
-    font-size: 1.3em;
+    font-size: 1.5em;
     border-radius: 32px;
     border: none;
 }
@@ -112,7 +104,7 @@ background-color: #2facddc7;
 
 .about fieldset{
     border-radius: 40px;
-    font-size: max(2.25vh,1.8vw);
+    font-size: 1.5rem;
     padding: 50px ;
     box-shadow: 0 0 30px black;
     text-align: justify;
@@ -132,88 +124,12 @@ background-color: #2facddc7;
     margin-top: 50px;
 }
 
-.syllabus select{
+.syllabus input[type=number]{
     background: #80808033;
     border: 1px solid rgb(150 150 150 / 79%);
-    color: #fff;
-    max-width: 90px;
-    font-size: 1rem;
-    /* border-radius: 5px; */
+    max-width: 50px;
+    border-radius: 5px;
     height: 1.5em;
-    /* position: relative;
-    bottom: 5px; */
-}
-
-.syllabus select option{
-    background: #2EADDD;
-    /* line-height: 110%;
-    border-bottom: 1px solid grey; */
-}
-/* .syllabus select option::after ::before{
-    content: "";
-    background: transparent;
-} */
-
-.syllabus select option:hover{
-    background-color: white;
-}
-
-.perks{
-    background-image: url("./images/Solutions_ExamAdmin_hero_1.jpg");
-    background-size: cover;
-    background-position: center;
     position: relative;
-}
-
-.perks::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(12 58 75 / 78%);
-}
-
-.P-heading{
-    position: relative;
-    z-index: 1;
-    color: #2EADDD;
-    text-shadow: 0 0 15px black;
-}
-
-#per{
-    margin-top: min(120px,20%);
-    position: relative;
-    z-index: 1;
-    max-width: 95vw;
-    padding-left: 10%;
-    text-align: justify;
-}
-
-#per li{
-    margin-bottom: 15px;
-}
-
-
-@media screen and (max-width: 1050px) {
-    
-    /* .register-btn{
-        padding: 10px 30px;
-        font-size: min(6vh,4vw);
-    } */
-}
-
-@media screen and (max-width:600px) {
-    .clip-layer{
-        width: 90vw;
-        clip-path: polygon(0 25vh, 95vw 25vh, 75vw 60vh, 0% 60vh); 
-        height: 80vh;
-    }
-    .about{
-        padding:5vh 5vw;
-    }
-    .about fieldset{
-        padding: 35px;
-    }
+    bottom: 5px;
 }
