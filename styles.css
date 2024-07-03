@@ -86,6 +86,8 @@ background-color: #2facddc7;
     position: relative;
     left: -100%;
     transition: all 1s;
+    height: 90vh;
+    background-color: rgba(25, 25, 29, 0.964);
 }
 .navbar .mobile2 .dropdown{
     display: flex;
@@ -95,7 +97,7 @@ background-color: #2facddc7;
     align-items: center;
     background-color: rgba(25, 25, 29, 0.964);
     width: 100vw;
-    height: 90vh;
+    height: 90%;
 }
 
 .mobile2 a{
@@ -403,6 +405,7 @@ i{
 .links{
     width: 60vw;
     max-width: 500px;
+    min-width: 280px;
     margin: min(100px,20vh) auto;
     display: flex;
     align-items: center;
@@ -450,5 +453,11 @@ i{
     }
     .about fieldset{
         padding: 35px;
+    }
+    .perks{
+        height: 80vh;
+    }
+    .perks::before{
+        height: 80vh;
     }
 }
