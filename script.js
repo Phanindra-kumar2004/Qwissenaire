@@ -18,5 +18,12 @@ document.querySelector('.menu-icon').addEventListener('click', function() {
     }
 })
 
+let buttons = document.getElementsByClassName("register-btn");
+let downloadLink = buttons[1].firstElementChild;
 
+buttons[1].addEventListener('click',function(){
+    let year = document.getElementById('year-of-study').value;
+    console.log(year);
+    downloadLink.href = year - 5 + ".pdf"; 
+})
 
