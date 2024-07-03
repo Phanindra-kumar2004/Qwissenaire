@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: rgb(37, 66, 125);
     width: 100vw;
@@ -56,9 +60,16 @@ body{
 .nav-links a:hover{
 background-color: #2facddc7;
 }
+.navbar .desktop a{
+    height: 100%;
+}
 
-.navbar .desktop img{
+.navbar .desktop a img{
     height: 90%;
+}
+
+.navbar .mobile a{
+    height: 100%;
 }
 
 .navbar .mobile{
@@ -67,7 +78,7 @@ background-color: #2facddc7;
     
 }
 
-.navbar .mobile img{
+.navbar .mobile a img{
     height: 90%;
 }
 
@@ -233,7 +244,7 @@ background-color: #2facddc7;
 }
 
 .heading{
-    font-size: min(11.5vw,9vh);
+    font-size: min(10.5vw,7vh);
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -263,10 +274,6 @@ background-color: #2facddc7;
     /* line-height: 110%;
     border-bottom: 1px solid grey; */
 }
-/* .syllabus select option::after ::before{
-    content: "";
-    background: transparent;
-} */
 
 .syllabus select option:hover{
     background-color: white;
@@ -339,12 +346,82 @@ background-color: #2facddc7;
         display: inline-block;
         margin: 2px;
         scroll-snap-align: start;
-        background-color: aqua;
+        background-color: #2EADDD;
         text-align: center;
         justify-content: center;
         align-items: center;
         font-size: larger;
     }
+}
+.contact{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #26252C;
+
+    >h1{
+        margin-top: 5vh;
+    }
+
+    > h2{
+        text-align: center;
+        font-family:  Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.5em;
+    }
+}
+
+.contact .poc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 80vw;
+    margin: 5vh auto 0;
+    font-size: 1.125em;
+    > div{
+        margin: 30px;
+
+        > p{
+            margin: 15px 0;
+        }
+    }
+
+}
+
+
+i{
+    color: #2EADDD;
+    padding: 0 10px;
+}
+.poc-name{
+    font-size: 1.125em;
+    color: #2EADDD;
+}
+
+.links{
+    width: 60vw;
+    max-width: 500px;
+    margin: min(100px,20vh) auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    > a{
+        font-size: 1.7em;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #2EADDD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+}
+
+.footer{
+    text-align: center;
 }
 
 @media screen and (max-width: 950px) {
