@@ -366,7 +366,7 @@ background-color: #2facddc7;
     > h2{
         text-align: center;
         font-family:  Verdana, Geneva, Tahoma, sans-serif;
-        font-size: 1.5em;
+        font-size: max(3.375vh,2.7vh);
     }
 }
 
@@ -384,6 +384,7 @@ background-color: #2facddc7;
 
         > p{
             margin: 15px 0;
+            font-size:  max(2.25vh,1.8vw);
         }
     }
 
@@ -395,7 +396,7 @@ i{
     padding: 0 10px;
 }
 .poc-name{
-    font-size: 1.125em;
+    font-size: max(2.25vh,1.8vw);
     color: #2EADDD;
 }
 
