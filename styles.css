@@ -309,6 +309,43 @@ background-color: #2facddc7;
     margin-bottom: 15px;
 }
 
+.testimonials{
+    background-color: rgba(38, 37, 44, 0.914);
+    padding-bottom: 50px;
+
+    > h1{
+        font-size: min(10.5vw,7vh);
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.testimonials-cards{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 20px;
+    scrollbar-width: none;
+
+    > .test-card{
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        margin: 2px;
+        scroll-snap-align: start;
+        background-color: aqua;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: larger;
+    }
+}
 
 @media screen and (max-width: 950px) {
     
